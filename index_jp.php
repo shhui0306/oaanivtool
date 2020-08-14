@@ -72,10 +72,10 @@ if ($mode == "c" || ($mode == "r" && $dayava)){
 if ($before){
 if ($mode == "c"){
 // show comming soon message if countdown not yet start?>
-<h4>每日倒數即將推出！</h4>
+<h4>カウントダウン近日公開予定</h4>
 <img class="csimage" src="<?php echo $unitimages["cs"]; ?>">
 <?php }else {?>
-即將推出！
+近日公開予定
 <?php } }
 else if ($after){
 // show celebration story if over
@@ -88,35 +88,37 @@ $remainingday = COUNTDAYS-$id;
 $havegoods = $cdata ["goodscreator"] != null;
 $haveillust = $cdata ["illustcreator"] != null;
 ?>
-<h4>【<?php echo $date;?>： 倒數<?php echo COUNTDAYS-$cdata["id"]?>天！】</h4>
+<h4>【<?php echo $date;?>： あと<?php echo COUNTDAYS-$cdata["id"]?>日！】</h4>
 
 <?php if ($remainingday == 1){?>
-明天就是《オンエア！》兩週年的日子了！
+明日はいよいよ「オンエア！」二周年！
 <?php }else if ($remainingday <=10){?>
-離《オンエア！》兩週年只剩<?php echo $remainingday?>天！
+オンエア！二周年までわずか<?php echo $remainingday?>日！
 <?php }else{?>
-離《オンエア！》兩週年還有<?php echo $remainingday?>天！
+オンエア！二周年まであと<?php echo $remainingday?>日！
 <?php } ?>
 
-今天一起倒數的是<?php if ($cdata["unit"]== "ar") {?>荒木冴老師<?php }
-else { echo $unitnames[$cdata["unit"]];?>的<?php echo $cdata["charaName"]; }?>！<br>
-<?php echo $cdata["message"];?><br>
+今日のカウントダウン担当は<?php if ($cdata["unit"]== "ar") {?>荒木冴先生<?php }
+else { echo $unitnames[$cdata["unit"]];?>の<?php echo $cdata["charaName"];?><?php echo $cdata["isSenpai"]?"先輩":"くん";}?>です！<br>
+<?php echo $cdata["message_jp"];?><br>
 
 <div class="row">
 <?php if ($havegoods){?>
 <div class="col-lg-<?php echo $haveillust?"6":"12"; ?>">
 <a href="#" class="pop-<?php echo $id;?>-goods"  data-toggle="modal" data-target="#imagemodal-<?php echo $id;?>"><img class="celimage" src="<?php echo $cdata["goodslink"] ?>"></a><br>
-祭壇： <?php echo $cdata ["goodscreator"];?>
+グッズ写真： <?php echo $cdata ["goodscreator"];?>様
 </div>
 <?php }?>
 
 <?php if ($haveillust){?>
 <div class="col-lg-<?php echo $havegoods?"6":"12"; ?>">
 <a href="#" class="pop-<?php echo $id;?>-illust" data-toggle="modal" data-target="#imagemodal-<?php echo $id;?>" ><img class="celimage" src="<?php echo $cdata["illustlink"]; ?>"></a><br>
-賀圖：<?php echo $cdata ["illustcreator"];?>
+イラスト：<?php echo $cdata ["illustcreator"];?>様
 </div>
 <?php }?>
 </div>
+
+
 
 <div class="modal fade" id="imagemodal-<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-<?php echo $id;?>" aria-hidden="true">
   <div class="modal-dialog modal-xl">
@@ -141,13 +143,13 @@ $(function() {
 </script>
 
 <?php }}else{?>
-即將推出！
+近日公開予定
 <?php }?>
 
 <?php if ($mode == "c"){    // countdown mode?>
     <div class="row">
         <div class="col-12">
-        <a href="index_jp.php">日本語 / 日文</a>
+        <a href="index.php">中文 / 中国語</a>
         </div>
     </div>
 <?php }?>

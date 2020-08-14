@@ -1,415 +1,488 @@
 <?php
-    // 倒數名單，請按以下範本填寫
-    /*
-    [
-        "date" => "(登場日期)",
-        "charaName" => "(角色名稱)",
-        "message" => "(倒數內容)",
-        "unit" => "(組合)"
-        "goodscreator" => "(祭壇提供)",
-        "illustcreator" => "(賀圖提供)",
-       "goodslink" => "(祭壇圖片連結)",
-       "goodslink" => "(賀圖圖片連結)",
-        "id" => (必須獨一無二),
-    ],
-    */
-
-    //倒數清單
     $countdownlist = [
         [
-            "date" => "2021-7-17",
+            "date" => "2020-7-17",
             "charaName" => "雅野椿",
+            "isSenpai" => false,
             "message" => "",
+            "message_jp" => "",
             "unit" => "hb",
             "goodscreator" => "",
             "illustcreator" => "",
-           "goodslink" => "",
-           "goodslink" => "",
+           "goodslink"=>"",
+           "illustlink"=>"",
             "id" => 1,
         ],
         
         [
-            "date" => "2021-7-18",
+            "date" => "2020-7-18",
             "charaName" => "橘央太",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "hb",
-            "goodscreator" => "",
-            "illustcreator" => "",
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           "goodslink"=>"",
+           "illustlink"=>"",
             "id" => 2,
         ],
 
         [
-            "date" => "2021-7-19",
+            "date" => "2020-7-19",
             "charaName" => "加賀谷蓮",
-            "message" => "",
+            "isSenpai" => true,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "hb",
-            "goodscreator" => "",
-            "illustcreator" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
            "goodslink"=>"",
-           "goodslink" => "",
+           "illustlink"=>"",
             "id" => 3,
         ],
 
         [
-            "date" => "2021-7-20",
+            "date" => "2020-7-20",
             "charaName" => "藤間鈴",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "hb",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           "goodslink"=>"",
+           "illustlink"=>"",
             "id" => 4,
         ],
 
         [
-            "date" => "2021-7-21",
+            "date" => "2020-7-21",
             "charaName" => "鳥羽霞",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "hb",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
+           "goodslink"=>"",
+           "illustlink"=>"",
+
             "id" => 5,
         ],
 
         [
-            "date" => "2021-7-22",
+            "date" => "2020-7-22",
             "charaName" => "青柳帝",
-            "message" => "",
+            "isSenpai" => true,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "rf",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
+           "goodslink"=>"",
+           "illustlink"=>"",
+
             "id" => 6,
         ],
 
         [
-            "date" => "2021-7-23",
+            "date" => "2020-7-23",
             "charaName" => "辺見宙",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "rf",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
+           "goodslink"=>"",
+           "illustlink"=>"",
             "id" => 7,
         ],
 
         [
-            "date" => "2021-7-24",
+            "date" => "2020-7-24",
             "charaName" => "天橋幸弥",
-            "message" => "",
+            "isSenpai" => true,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "rf",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
+           "goodslink"=>"",
+           "illustlink"=>"",
+
             "id" => 8,
         ],
 
         [
-            "date" => "2021-7-25",
+            "date" => "2020-7-25",
             "charaName" => "夜来立夏",
-            "message" => "",
+            "isSenpai" => true,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "rf",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator" => null,
+            "illustcreator"=>"",
+           
+           "goodslink"=>"",
+           "illustlink"=>"",
+
             "id" => 9,
         ],
 
         [
-            "date" => "2021-7-26",
+            "date" => "2020-7-26",
             "charaName" => "浮間志朗",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "rf",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
+           "goodslink"=>"",
+           "illustlink"=>"",
+
             "id" => 10,
         ],
         
         [
-            "date" => "2021-7-27",
+            "date" => "2020-7-27",
             "charaName" => "雛瀬碧鳥",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "em",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
+           "goodslink"=>"",
+           "illustlink"=>"",
+
             "id" => 11,
         ],
 
         [
-            "date" => "2021-7-28",
+            "date" => "2020-7-28",
             "charaName" => "小野屋あずき",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "em",
-            "goodscreator" => "",
-            "illustcreator" => "",           
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
            "goodslink"=>"",
-           "goodslink" => "",
+           "illustlink"=>"",
+
             "id" => 12,
         ],
         
         [
-            "date" => "2021-7-29",
+            "date" => "2020-7-29",
             "charaName" => "見明佐和",
-            "message" => "",
+            "isSenpai" => true,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "em",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
+           "goodslink"=>"",
+           "illustlink"=>"",
+
             "id" => 13,
         ],
 
         [
-            "date" => "2021-7-30",
+            "date" => "2020-7-30",
             "charaName" => "冠嵐真",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "em",
-            "goodscreator" => "",
-            "illustcreator" => "",           
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
            "goodslink"=>"",
-           "goodslink" => "",
+           "illustlink"=>"",
+
             "id" => 14,
         ],
 
         [
-            "date" => "2021-7-31",
+            "date" => "2020-7-31",
             "charaName" => "天神陽人",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "em",
-            "goodscreator" => "",
-            "illustcreator" => "",           
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
            "goodslink"=>"",
-           "goodslink" => "",
+           "illustlink"=>"",
+
             "id" => 15,
         ],
 
         [
-            "date" => "2021-8-1",
+            "date" => "2020-8-1",
             "charaName" => "光城新多",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "ma",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
+           "goodslink"=>"",
+           "illustlink"=>"",
+
             "id" => 16,
         ],
 
         [
-            "date" => "2021-8-2",
+            "date" => "2020-8-2",
             "charaName" => "森重優那",
-            "message" => "",
+            "isSenpai" => true,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "ma",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           
+           "goodslink"=>"",
+           "illustlink"=>"",
+
             "id" => 17,
         ],
 
         [
-            "date" => "2021-8-3",
+            "date" => "2020-8-3",
             "charaName" => "愛澤心",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "ma",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           "goodslink"=>"",
+           "illustlink"=>"",
             "id" => 18,
         ],
 
         [
-            "date" => "2021-8-4",
+            "date" => "2020-8-4",
             "charaName" => "黒曜護",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "ma",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           "goodslink"=>"",
+           "illustlink"=>"",
             "id" => 19,
         ],
 
         [
-            "date" => "2021-8-5",
+            "date" => "2020-8-5",
             "charaName" => "神谷祈",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "ma",
-            "goodscreator" => "",
-            "illustcreator" => "",           
+            "goodscreator" => null,
+            "illustcreator"=>"",
            "goodslink"=>"",
-           "goodslink" => "",
+           "illustlink"=>"",
             "id" => 20,
         ],
 
         [
-            "date" => "2021-8-6",
+            "date" => "2020-8-6",
             "charaName" => "輝崎千紘",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "pr",
-            "goodscreator" => "",
-            "illustcreator" => "",           
+            "goodscreator" => null,
+            "illustcreator"=>"",
            "goodslink"=>"",
-           "goodslink" => "",
+           "illustlink"=>"",
             "id" => 21,
         ],
 
         [
-            "date" => "2021-8-7",
+            "date" => "2020-8-7",
             "charaName" => "櫻井百瀬",
-            "message" => "",
+            "isSenpai" => true,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "pr",
-            "goodscreator" => "",
-            "illustcreator" => "",           
+            "goodscreator" => null,
+            "illustcreator"=>"",
            "goodslink"=>"",
-           "goodslink" => "",
+           "illustlink"=>"",
+
             "id" => 22,
         ],
 
         [
-            "date" => "2021-8-8",
+            "date" => "2020-8-8",
             "charaName" => "吉條七緒",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "pr",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator" => null,
+            "illustcreator"=>"",
+           "goodslink"=>"",
+           "illustlink"=>"",
+
             "id" => 23,
         ],
 
         [
-            "date" => "2021-8-9",
+            "date" => "2020-8-9",
             "charaName" => "輝崎蛍",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "pr",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           "goodslink"=>"",
+           "illustlink"=>"",
             "id" => 24,
         ],
 
         [
-            "date" => "2021-8-10",
+            "date" => "2020-8-10",
             "charaName" => "一色葵",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "pr",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           "goodslink"=>"",
+           "illustlink"=>"",
+
             "id" => 25,
         ],
 
         [
-            "date" => "2021-8-11",
+            "date" => "2020-8-11",
             "charaName" => "橋倉杏",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "dr",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           "goodslink"=>"",
+           "illustlink"=>"",
             "id" => 26,
         ],
 
         [
-            "date" => "2021-8-12",
+            "date" => "2020-8-12",
             "charaName" => "美和巴",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "dr",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           "goodslink"=>"",
            "illustlink"=>"",
+
             "id" => 27,
         ],
 
         [
-            "date" => "2021-8-13",
+            "date" => "2020-8-13",
             "charaName" => "白雪零",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "dr",
-            "goodscreator" => "",
-            "illustcreator" => "",           
+            "goodscreator" =>  null,
+            "illustcreator"=>"",
            "goodslink"=>"",
-           "goodslink" => "",
+           "illustlink"=>"",
             "id" => 28,
         ],
 
         [
-            "date" => "2021-8-14",
+            "date" => "2020-8-14",
             "charaName" => "雨知祭利",
-            "message" => "",
+            "isSenpai" => false,
+            "message"=>"",
+            "message_jp"=>"",
             "unit" => "dr",
-            "goodscreator" => "",
-            "illustcreator" => "",            
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           "goodslink"=>"",
+           "illustlink"=>"",
             "id" => 29,
         ],
 
         [
-            "date" => "2021-8-15",
+            "date" => "2020-8-15",
             "charaName" => "荒木冴",
+            "isSenpai" => false,            
             "message" => "",
+            "message_jp" => "",
             "unit" => "ar",
-            "goodscreator" => "",
-            "illustcreator" => "",           
-           "goodslink" => "",
-           "goodslink" => "",
+            "goodscreator"=>"",
+            "illustcreator"=>"",
+           "goodslink"=>"",
+           "illustlink"=>"",
             "id" => 30,
         ],
 ];
 
 
-//組合名
+// 組合名
 $unitnames = [
-    "hb" => "Hot-Blood",        //Hot-Blood
-    "rf" => "Re:Fly",           //Re-Fly
-    "em" => "エメ☆カレ",       //エメ☆カレ
-    "ma" => "MAISY",            //MAISY
-    "pr" => "Prid's",           //Prid's
-    "dr" => "drop",             //drop
-    "ar" => "老師",             //荒木冴
+    "hb" => "Hot-Blood",
+    "rf" => "Re:Fly",
+    "em" => "エメ☆カレ",
+    "ma" => "MAISY",
+    "pr" => "Prid's",
+    "dr" => "drop",
+    "ar" => "宝石が丘",
 ];
 
-//組合出場日期
+// 組合出場日期
 $unitdates = [
-    "hb" => "2021-7-17",        //Hot-Blood
-    "rf" => "2021-7-22",        //Re-Fly
-    "em" => "2021-7-27",        //エメ☆カレ
-    "ma" => "2021-8-1",         //MAISY
-    "pr" => "2021-8-6",         //Prid's
-    "dr" => "2021-8-11",        //drop
-    "ar" => "2021-8-15",        //荒木冴
-    "all" => "2021-8-16"        //週年當天
+    "hb" => "2020-7-17",
+    "rf" => "2020-7-22",
+    "em" => "2020-7-27",
+    "ma" => "2020-8-1",
+    "pr" => "2020-8-6",
+    "dr" => "2020-8-11",
+    "ar" => "2020-8-15",
+    "all" => "2020-8-16"
 ];
 
 
 //組合圖連結
 $unitimages =[
-    "cs" => "",     //即將推出
-    "hb" =>"",      //Hot-Blood
-    "rf" =>"",      //Re-Fly
-    "em" =>"",      //エメ☆カレ
-    "ma" =>"",      //MAISY
-    "pr" =>"",      //Prid's
-    "dr" =>"",      //drop
-    "ar" =>"",      //荒木冴
+    "cs" => "",
+    "hb" => "",
+    "rf" => "",
+    "em" => "",
+    "ma" => "",
+    "pr" => "",
+    "dr" => "",
+    "ar" => "",
 ];

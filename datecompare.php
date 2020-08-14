@@ -1,6 +1,7 @@
 <?php
-define('FIRSTDAY','2021-7-17');  //開始倒數第一天
-define('ANNIVDATE','2021-8-16');  //週年當日
+define('FIRSTDAY','2020-7-17');  //開始倒數第一天
+define('ANNIVDATE','2020-8-16');  //週年當日
+define('COUNTDAYS',31); //倒數天數（包括當天）
 
 function datecompare($date,$rdate){
 // true: after or same day reference

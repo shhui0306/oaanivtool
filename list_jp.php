@@ -21,18 +21,18 @@ $today = "2020-8-17";
 
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <a class="nav-item nav-link nav-today active" id="nav-today-tab" data-toggle="tab" href="#nav-today" role="tab" aria-controls="nav-today">今日倒數</a>
+    <a class="nav-item nav-link nav-today active" id="nav-today-tab" data-toggle="tab" href="#nav-today" role="tab" aria-controls="nav-today">今日のカウントダウン</a>
     <?php 
     foreach( $unitnames as $unit => $uName){?>
     <a class="nav-item nav-link nav-<?php echo $unit?>" id="nav-<?php echo $unit?>-tab" data-toggle="tab" href="#nav-<?php echo $unit?>" role="tab" aria-controls="nav-<?php echo $unit?>"><?php echo $uName?></a>
     <?php $active = false;}?>
-    <a class="nav-item nav-link nav-cel" id="nav-cel-tab" data-toggle="tab" href="#nav-cel" role="tab" aria-controls="nav-cel">當日慶祝</a>
-    <a class="nav-item nav-link nav-cel" id="nav-cel-tab"  href="list_jp.php" role="tab" >日本語 / 日文</a>
+    <a class="nav-item nav-link nav-cel" id="nav-cel-tab" data-toggle="tab" href="#nav-cel" role="tab" aria-controls="nav-cel">アニバーサリー当日</a>
+    <a class="nav-item nav-link nav-cel" id="nav-cel-tab"  href="list.php" role="tab" >中文 / 中国語</a>
     <div>
 </nav>
 <div class="tab-content main" id="nav-tabContent">
 <div class="tab-pane fade show active" id="nav-today" role="tabpanel" aria-labelledby="nav-today-tab">
-<h3>今日倒數</h3>
+<h3>今日のカウントダウン</h3>
 <div class="card text-center todaychara"></div>
 </div>
 <?php
@@ -50,17 +50,17 @@ $today = "2020-8-17";
     </div>
     <?php }
     }}else{?>
-    <h4>即將推出！</h4>
+    <h4>近日公開予定</h4>
     <?php }?>
     
     </div>
     <?php $active = false;}?>
     <div class="tab-pane fade show" id="nav-cel" role="tabpanel" aria-labelledby="nav-cel-tab">
         <?php if (datecompare($today,$unitdates["all"])){?>
-        <h3>當日慶祝</h3>
+        <h3>アニバーサリー当日</h3>
         <div class="card text-center celstory"></div>
         <?php }else{?>
-          <h4>即將推出！</h4>
+          <h4>近日公開予定</h4>
           <img class="csimage" src="<?php echo $unitimages["cs"]; ?>">
         <?php }?>
     </div>
@@ -68,11 +68,11 @@ $today = "2020-8-17";
 <script type="text/javascript">
         <?php foreach($countdownlist as $chara){?>
             if($(".chara-<?php echo $chara["id"]?>").length){
-            $(".chara-<?php echo $chara["id"]?>").load("index.php/?mode=r&reviewday=<?php echo $chara["date"]?>");
+            $(".chara-<?php echo $chara["id"]?>").load("index_jp.php/?mode=r&reviewday=<?php echo $chara["date"]?>");
             }
         <?php }?>
-        $(".todaychara").load("index.php");
-        $(".celstory").load("index.php/?mode=r&reviewday=<?php echo ANNIVDATE?>");
+        $(".todaychara").load("index_jp.php");
+        $(".celstory").load("index_jp.php/?mode=r&reviewday=<?php echo ANNIVDATE?>");
 </script>
 </body>
 </html>
